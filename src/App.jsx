@@ -1,8 +1,9 @@
 import './App.css'
+import Header from './Components/Header.jsx'
 function App () {
   return (
     <>
-      <h1>ALLAH is the greatest</h1>
+      <Header />
     </>
   )
 }
