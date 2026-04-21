@@ -15,7 +15,7 @@ export default function Country (props) {
             <div className='flex flex-col md:flex-row gap-6 '>
               <h5 className='text-lg md:text-xl font-semibold'>{props.country}</h5>
               <a
-                href={props.map}
+                href={props.map1}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='
