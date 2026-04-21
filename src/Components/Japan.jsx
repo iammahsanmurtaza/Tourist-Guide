@@ -1,4 +1,4 @@
-export default function Japan () {
+export default function Japan (props) {
   const date = new Date('2026-04-20')
   const date1 = new Date('2026-06-20')
   return (
@@ -13,9 +13,9 @@ export default function Japan () {
 
           <div className='text-center md:text-left'>
             <div className='flex flex-col md:flex-row gap-6 '>
-              <h5 className='text-lg md:text-xl font-semibold'>JAPAN</h5>
+              <h5 className='text-lg md:text-xl font-semibold'>{props.name}</h5>
               <a
-                href='https://maps.app.goo.gl/SqxHUFJrxQEx4ZRX7'
+                href={props.map}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='
@@ -39,7 +39,7 @@ export default function Japan () {
                 leading-tight
             '
             >
-              Grand Seiko
+              {props.watch}
             </div>
             <div
               className='pt-2 sm:pt-6
